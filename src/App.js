@@ -1,24 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import axios from 'axios';
+
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    activities: []
+  };
+
+  async getActivities() {
+    return await axios.get('https://api.runningheroes.com/v3/users/56c35408de31c6b954b81080/activities', {
+      params: {
+        limit : 10,
+        sort: '-points',
+        skip: 0
+      }
+    });
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+
         </header>
       </div>
     );
