@@ -10,7 +10,7 @@ const API_URL = 'https://api.runningheroes.com';
 // QueryString :
 // {
 //   limit : 10,
-//   sort: '-points',
+//   sort: '-date',
 //   skip: 0
 // }
 function fetchActivities() {}
