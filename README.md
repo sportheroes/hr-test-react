@@ -14,7 +14,7 @@ yarn start
 
 ## Exercice
 
-![image](https://user-images.githubusercontent.com/582703/55339634-59880680-54a3-11e9-864b-9b2f29efcec0.png)
+![image](https://user-images.githubusercontent.com/582703/55339935-edf26900-54a3-11e9-8955-76e9863a7f62.png)
 
 Créer un feed d'activités simple comprenant :
 
